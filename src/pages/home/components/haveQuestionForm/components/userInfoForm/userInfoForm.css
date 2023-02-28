@@ -1,0 +1,161 @@
+.userInfoForm{
+    position: absolute;
+    top: 201px;
+    left: calc(50% - 121.5px);
+    width: 243px;
+    height: 288px;
+    border-radius: 39px;
+    filter: drop-shadow(40px 40px 40px rgba(2,8,22,0.3 ));
+    background: #ffffff;
+    -webkit-filter: drop-shadow(40px 40px 40px rgba(2,8,22,0.3 ));
+}
+.userInfoForm .userInfoForm-name{
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 74px);
+    width: 132px;
+    height: 34px;
+    border-radius: 19px;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.1 ));
+    background: #ffffff;
+    padding-left: 16px;
+    font-family: "helvetica";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+    text-align: left;
+    color: #1a47b0;
+    border: none;
+    outline: none;
+}
+.userInfoForm .userInfoForm-email, .userInfoForm-telephon{
+    position: absolute;    
+    left: calc(50% - 74px);
+    width: 132px;
+    height: 33px;
+    border-color: #dddfe7;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 19px;
+    font-family: "helvetica";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+    text-align: left;
+    color: #1a47b0;
+    padding-left: 16px;
+    outline: none;
+}
+.userInfoForm .userInfoForm-email{
+    top: 100px;
+}
+.userInfoForm .userInfoForm-telephon{
+    top: 160px;
+}
+.userInfoForm .enviar-btn{
+    position: absolute;
+    top: 220px;
+    left: calc(50% - 74px);
+    width: 148px;
+    height: 34px;
+    border-radius: 19px;
+    filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.4 ));
+    background: #123075;
+    background: linear-gradient(180deg,     #123075 0.00%,     #092056 100.00%);
+    font-family: "helvetica";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10px;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .userInfoForm{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 611px;
+        height: 707px;
+        border-radius: 66px;
+        filter: drop-shadow(40px 40px 40px rgba(2,8,22,0.3 ));
+        background: #ffffff;
+        -webkit-filter: drop-shadow(40px 40px 40px rgba(2,8,22,0.3 ));
+        -webkit-border-radius: 66px;
+        -moz-border-radius: 66px;
+        -ms-border-radius: 66px;
+        -o-border-radius: 66px;
+    }   
+    .userInfoForm .userInfoForm-name{
+        position: absolute;
+        top: 137px;
+        left: calc(50% - 174.5px);
+        width: 349px;
+        height: 80px;
+        border-radius: 19px;
+        filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.1 ));
+        background: #ffffff;
+        padding-left: 16px;
+        font-family: "helvetica";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        font-style: normal;
+        text-align: left;
+        color: #1a47b0;
+        border: none;
+        outline: none;
+    }
+    .userInfoForm .userInfoForm-email, .userInfoForm-telephon{
+        position: absolute;    
+        left: calc(50% - 175px);
+        width: 350px;
+        height: 80px;
+        border-color: #dddfe7;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 19px;
+        font-family: "helvetica";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        font-style: normal;
+        text-align: left;
+        color: #1a47b0;
+        padding-left: 16px;
+        outline: none;
+    }
+    .userInfoForm .userInfoForm-email{
+        top: 257px;
+    }
+    .userInfoForm .userInfoForm-telephon{
+        top: 377px;
+    }
+    .userInfoForm .enviar-btn{
+        position: absolute;
+        top: 490px;
+        left: calc(50% - 175.5px);
+        width: 351px;
+        height: 80px;
+        border-radius: 19px;
+        filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.4 ));
+        background: #123075;
+        background: linear-gradient(180deg,     #123075 0.00%,     #092056 100.00%);
+        font-family: "helvetica";
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 25px;
+        font-style: normal;
+        text-align: center;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}

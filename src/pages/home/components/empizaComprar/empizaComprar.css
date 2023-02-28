@@ -1,0 +1,162 @@
+.empizaComprar-wrapper{
+    position: relative;
+    width: 100%;
+    height: 600px;   
+    background: #f7f8fb; 
+}
+.empizaComprar-wrapper .empizaimg1img{
+    position: absolute;
+    top: 50px;
+    right: 0;  
+    width: 598.2px;
+    height: 373px;
+}
+.empizaComprar-wrapper .empizaimg2img{
+    position: absolute;
+    top: 300px;
+    width: 411px;
+    height: 281px;
+}
+.empizaComprar-wrapper .empizaComprar-txt1{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 273px;
+    height: 35px;
+    font-family: "helvetica";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 62px;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+    z-index: 1;
+}
+.empizaComprar-wrapper .empizaComprar-txt2{
+    position: absolute;
+    top: 130px;
+    right: 35px;
+    width: 283px;
+    height: 62px;
+    font-family: "helvetica";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    text-align: right;
+    color: #ffffff;
+    z-index: 1;
+}
+.empizaComprar-wrapper .empizaComprar-btn{
+    position: absolute;
+    top: 210px;
+    right: 30px;
+    font-family: "roboto";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    font-style: normal;    
+    color: #ffffff;
+    width: 210px;
+    height: 47px;
+    border-radius: 24px;
+    filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.4 ));
+    background: #fa2b56;
+    background: linear-gradient(-135deg, 
+    #fa2b56 0.00%, 
+    #f91c3d 100.00%);
+    z-index: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .empizaComprar-wrapper{
+        position: relative;
+        width: 100%;
+        height: 1059px;   
+        background: #f7f8fb; 
+    }
+    .hide-in-pc{
+        display: none;
+    }
+    .empizaComprar-wrapper .empizaimg1img{
+        position: absolute;
+        top: 50px;
+        right: 0;  
+        width: 75%;
+        height: auto;
+    }
+    .empizaComprar-wrapper .empizaimg2img{
+        position: absolute;
+        right: 47px;
+        top: 22%;
+        width: 48%;
+        height: auto;
+    }
+    .empieza-txt-box{        
+        height: 100%;
+        display: flex;
+        align-items: center; 
+        width: 90%;
+        max-width: 1256px;
+        margin: auto;        
+    }
+    .empizaComprar-wrapper .empizaComprar-txt1{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 627px;
+        height: 69px;
+        font-family: "helvetica";
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 62px;
+        font-style: normal;
+        text-align: left;
+        color: #0f358e;
+    }
+    .empizaComprar-wrapper .empizaComprar-txt2{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 536px;
+        height: 125px;
+        font-family: "helvetica";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        font-style: normal;
+        text-align: left;
+        color: #595f6f;
+    }
+    .empizaComprar-wrapper .empizaComprar-btn img{
+        height: 23px;
+        margin-left: 5px;
+    }
+    .empizaComprar-wrapper .empizaComprar-btn{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 403px;
+        height: 75px;        
+        border-radius: 5px;
+        filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.4 ));
+        background: #fa2b56;
+        background: linear-gradient(-135deg, 
+        #fa2b56 0.00%, 
+        #f91c3d 100.00%);
+        font-family: "roboto";
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 27px;
+        font-style: normal;        
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+}

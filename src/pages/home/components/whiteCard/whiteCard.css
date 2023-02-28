@@ -1,0 +1,92 @@
+.whiteCard-wrapper{
+    width: 236px;
+    height: 312px;
+    margin: auto;
+    border-radius: 43px;
+    filter: drop-shadow(40px 40px 40px rgba(0,0,0,0.1 ));
+    background: #ffffff;
+    position: relative; 
+    margin-bottom: 100px;
+}
+.whiteCard-wrapper .whiteCard-heading{
+    position: absolute;
+    top: 59px;
+    left: 20px;
+    width: 124px;
+    height: 34px;
+    font-family: "helvetica";
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 62px;
+    font-style: normal;
+    text-align: left;
+    color: #0f358e;
+}
+.whiteCard-wrapper .whiteCard-text{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    width: 201px;
+    height: 131px;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    text-align: left;
+    color: #595f6f;    
+}
+.whiteCard-wrapper .whiteCard-image{
+    position: absolute;
+    top: -54px;
+    right: -54px;
+}
+@media only screen and (min-width: 600px) {
+    .whiteCard-wrapper{
+        width: 351px;
+        height: 462px;
+        margin: 0;
+        border-radius: 43px;
+        filter: drop-shadow(40px 40px 40px rgba(0,0,0,0.1 ));
+        background: #ffffff;
+        position: relative;
+        -webkit-filter: drop-shadow(40px 40px 40px rgba(0,0,0,0.1 ));
+        -webkit-border-radius: 43px;
+        -moz-border-radius: 43px;
+        -ms-border-radius: 43px;
+        -o-border-radius: 43px;
+    }   
+    .whiteCard-wrapper .whiteCard-heading{
+        position: absolute;
+        top: 86px;
+        left: 20px;
+        width: 184px;
+        height: 50px;
+        font-family: "helvetica";
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 62px;
+        font-style: normal;
+        text-align: left;
+        color: #0f358e;
+    }
+    .whiteCard-wrapper .whiteCard-text{
+        position: absolute;
+        bottom: 37px;
+        left: 27px;
+        width: 298px;
+        height: 194px;
+        font-family: "roboto";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        font-style: normal;
+        text-align: left;
+        color: #595f6f;    
+    }
+    .whiteCard-wrapper .whiteCard-image{
+        position: absolute;
+        top: -34px;
+        right: -44px;
+    }
+}

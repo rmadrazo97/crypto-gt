@@ -1,0 +1,104 @@
+.blueCard-wrapper{
+    position: relative;
+    width: 236px;
+    height: 315px;
+    margin: auto;
+    border-radius: 59px;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3 ));
+    background: #123075;
+    background: linear-gradient(180deg,     #123075 0.00%,     #092056 100.00%);
+    -webkit-border-radius: 59px;
+    -moz-border-radius: 59px;
+    -ms-border-radius: 59px;
+    -o-border-radius: 59px;    
+}
+.blueCard-wrapper .blueCard-heading{
+    position: absolute;
+    left: 18px;
+    top: 58px;
+    width: 125px;
+    height: 34px;
+    font-family: "helvetica";
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 62px;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.blueCard-wrapper .blueCard-text{
+    position: absolute;
+    left: 18px;
+    bottom: 40px;
+    width: 200px;
+    height: 132px;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.blueCard-wrapper .blueCard-image{
+    position: absolute;
+    top: -53px;
+    right: -53px;
+}
+.pc-spacer40{
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .blueCard-wrapper{
+        position: relative;
+        width: 351px;
+        height: 462px;
+        margin: 0;
+        border-radius: 50px;
+        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3 ));
+        background: #123075;
+        background: linear-gradient(180deg,         #123075 0.00%,         #092056 100.00%);
+        -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3 ));
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .blueCard-wrapper .blueCard-heading{
+        position: absolute;
+        left: 18px;
+        top: 86px;
+        width: 184px;
+        height: 50px;
+        font-family: "helvetica";
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 62px;
+        font-style: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    .blueCard-wrapper .blueCard-text{
+        position: absolute;
+        left: 18px;
+        bottom: 40px;
+        width: 298px;
+        height: 194px;
+        font-family: "roboto";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        font-style: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    .blueCard-wrapper .blueCard-image{
+        position: absolute;
+        top: -33px;
+        right: -43px;
+    }
+    .pc-spacer40{
+        display: block;
+        width: 40px;
+    }
+}

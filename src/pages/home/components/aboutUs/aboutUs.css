@@ -1,0 +1,93 @@
+.aboutUs{
+    position: relative;
+    width: 100%;
+    height: 573px;
+    background: #f7f8fb
+}
+.aboutUs .aboutUs-mobile .aboutUs-text1{
+    position: absolute;
+    top: 61px;
+    left: calc(50% - 89px);
+    width: 178px;
+    height: 25px;
+    font-family: "helvetica";
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 62px;
+    font-style: normal;
+    text-align: center;
+    color: #0f358e;
+}
+.aboutUs .aboutUs-mobile .aboutUs-text2{
+    position: absolute;
+    top: 120px;
+    left: calc(50% - 155px);
+    width: 310px;
+    height: 98px;
+    font-family: "helvetica";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    font-style: normal;
+    text-align: center;
+    color: #595f6f;
+}
+.aboutUs .aboutUs-mobile .aboutusImgMobile{
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 125.5px);
+    width: 251px;
+    height: 251px;
+    border-radius: 5px;
+    filter: drop-shadow(30px 30px 30px rgba(0,0,0,0.5 ));
+    -webkit-filter: drop-shadow(30px 30px 30px rgba(0,0,0,0.5 ));
+}
+.aboutUs .aboutUs-pc{
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .aboutUs{
+        position: relative;
+        width: 100%;
+        height: 931px;
+        background: #f7f8fb
+    }   
+    .aboutUs .aboutUs-mobile{
+        display: none;
+    }
+    .aboutUs .aboutUs-pc{
+        display: flex;  
+        width: 90%;
+        max-width: 1256px;
+        margin: auto;
+        height: 100%;             
+        align-items: center;
+    }   
+    .aboutUs .aboutUs-pc .aboutUs-text1{
+        width: 481px;
+        height: 54px;
+        font-family: "helvetica";
+        font-size: 55px;
+        font-weight: bold;
+        line-height: 62px;
+        font-style: normal;
+        text-align: left;
+        color: #0f358e;
+    }
+    .aboutUs .aboutUs-pc .aboutUs-text2{
+        font-family: "helvetica";
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 40px;
+        font-style: normal;
+        text-align: left;
+        color: #595f6f;
+        margin-top: 22px;
+    }
+    .aboutUs .aboutUs-pc .aboutusImgMobile{
+        width: 611px;
+        height: 611px;
+        border-radius: 5px;
+        filter: drop-shadow(30px 30px 30px rgba(0,0,0,0.5 ));        
+}
+}

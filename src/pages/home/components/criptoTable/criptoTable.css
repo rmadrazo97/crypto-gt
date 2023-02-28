@@ -1,0 +1,76 @@
+.criptoTable-wrapper{
+    width: 100%;    
+    background: #f7f8fb;
+}
+.criptoTable-wrapper .inner-wrapper{
+    width: 90%;
+    max-width: 1256px;
+    margin: auto;
+}
+.criptoTable-wrapper .criptoTable-text1{    
+    width: 367px;
+    height: 13px;
+    font-family: "helvetica";
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    font-style: normal;
+    text-align: left;
+    color: #3e3e3e;
+    margin-top: 34px;
+    margin-left: 31px;    
+}
+.criptoTable-wrapper .criptoTable-text2{    
+    width: 333px;
+    height: 25px;
+    font-family: "helvetica";
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 14px;
+    font-style: normal;
+    text-align: left;
+    color: #3e3e3e;
+    margin-top: 24px;
+    margin-left: 31px; 
+}
+.criptoTable-wrapper .criptoTable-mobile{    
+    background: #fff;
+    margin-top: 53px;    
+    margin-left: 31px;     
+    width: calc(100% - 61px);
+}
+.criptoTable-wrapper .criptoTable-mobile th{    
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    .criptoTable-wrapper .criptoTable-mobile{
+        display: none;        
+    }
+    .criptoTable-wrapper .criptoTable-text1{    
+        width: 100%;
+        height: 13px;
+        font-family: "helvetica";
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 57px;
+        font-style: normal;
+        text-align: left;
+        color: #3e3e3e;
+        margin-top: 81px;          
+    }
+    .criptoTable-wrapper .criptoTable-text2{    
+        width: 100%;
+        height: auto;
+        font-family: "helvetica";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 57px;
+        font-style: normal;
+        text-align: left;
+        color: #3e3e3e;
+        margin-top: 24px;
+        margin-left: 31px; 
+    }
+}
