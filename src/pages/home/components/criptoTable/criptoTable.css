@@ -3,7 +3,7 @@
     background: #f7f8fb;
 }
 .criptoTable-wrapper .inner-wrapper{
-    width: 90%;
+    width: 95%;
     max-width: 1256px;
     margin: auto;
 }
@@ -39,9 +39,43 @@
     margin-left: 31px;     
     width: calc(100% - 61px);
 }
+.criptoTable-wrapper .criptoTable-mobile thead{            
+    height: 50px;
+    line-height: 50px;        
+}
 .criptoTable-wrapper .criptoTable-mobile th{    
     font-size: 13px;
     font-weight: bold;
+    text-align: left;
+}
+.criptoTable-wrapper .criptoTable-mobile tbody tr{
+    height: 50px;
+    line-height: 50px;
+}
+.criptoTable-wrapper .criptoTable-mobile .cripto-table-mobile-name{    
+    width: 130px;
+    position: relative;
+}
+.criptoTable-wrapper .criptoTable-mobile .cripto-table-mobile-name img{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+.criptoTable-wrapper .criptoTable-mobile .cripto-table-mobile-name .name-span{
+    position: absolute;
+    top: -10px;
+    left: 45px;
+}
+.criptoTable-wrapper .criptoTable-mobile .cripto-table-mobile-name .symbol-span{
+    position: absolute;
+    bottom: -12px;
+    left: 45px;
+    font-size: 14px;
+    color: grey;
+    text-transform: uppercase;
+}
+.criptoTable-wrapper .criptoTable-pc{    
+    display: none;
 }
 
 @media only screen and (min-width: 600px) {
@@ -58,7 +92,8 @@
         font-style: normal;
         text-align: left;
         color: #3e3e3e;
-        margin-top: 81px;          
+        margin-top: 81px;
+        margin-left: 0;          
     }
     .criptoTable-wrapper .criptoTable-text2{    
         width: 100%;
@@ -71,6 +106,30 @@
         text-align: left;
         color: #3e3e3e;
         margin-top: 24px;
-        margin-left: 31px; 
+        margin-left: 0px; 
+    }
+    .criptoTable-wrapper .criptoTable-pc{  
+        display: table;  
+        background: #fff;
+        margin-top: 53px;             
+        width: 100%;
+    }
+    .criptoTable-wrapper .criptoTable-pc th{    
+        font-size: 13px;
+        font-weight: bold;
+        text-align: left;        
+    }
+    .criptoTable-wrapper .criptoTable-pc thead{            
+        height: 50px;
+        line-height: 50px;        
+    }
+    .criptoTable-wrapper .criptoTable-pc tbody tr{ 
+        height: 50px;
+        line-height: 50px;
+    }    
+    .criptoTable-wrapper .criptoTable-pc tbody td img{ 
+        position: relative;
+        top: 8px;
+        margin-left: 5px;
     }
 }

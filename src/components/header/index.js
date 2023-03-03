@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import bars from '../../assets/images/bars.svg';
 import socialIcon1 from '../../assets/images/socialIcon1.svg';
 import socialIcon2 from '../../assets/images/socialIcon2.svg';
@@ -15,10 +16,18 @@ const Header = () => {
           <span>COMPANY</span> LOGO
         </h1>
         <ul className="page-header-links">
-          <li className="active">Home</li>
-          <li>Formulario</li>
-          <li>Comunidad</li>
-          <li>Términos y Políticas</li>
+          <Link to="/">
+            <li className="active">Home</li>
+          </Link>
+          <Link to="/formulario">
+            <li>Formulario</li>
+          </Link>
+          <Link to="/">
+            <li>Comunidad</li>
+          </Link>
+          <Link to="/">
+            <li>Términos y Políticas</li>
+          </Link>
         </ul>
         <div className="page-header-socialIcons">
           <div className="page-header-socialIcon">

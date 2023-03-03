@@ -1,0 +1,40 @@
+.upload-file1{
+    height: 22px!important;
+    border-radius: 19px!important;
+    filter: drop-shadow(2.5px 2.5px 3.75px rgba(0,0,0,0.4 ))!important;
+    background: #dddfe7!important;
+    font-family: "helvetica"!important;
+    font-size: 6px!important;
+    font-weight: 400!important;
+    line-height: 8px!important;
+    font-style: normal!important;
+    text-align: center!important;
+    color: #595f6f!important;
+    -webkit-filter: drop-shadow(2.5px 2.5px 3.75px rgba(0,0,0,0.4 ))!important;
+    -webkit-border-radius: 19px!important;
+    -moz-border-radius: 19px!important;
+    -ms-border-radius: 19px!important;
+    -o-border-radius: 19px!important;
+    text-transform: capitalize;
+}
+@media only screen and (min-width: 600px) {
+    .upload-file1{
+        height: 50px!important;
+        border-radius: 19px!important;
+        filter: drop-shadow(2.5px 2.5px 3.75px rgba(0,0,0,0.4 ))!important;
+        background: #dddfe7!important;
+        font-family: "helvetica"!important;
+        font-size: 21px!important;
+        font-weight: 400!important;
+        line-height: 25px!important;
+        font-style: normal!important;
+        text-align: center!important;
+        color: #595f6f!important;
+        -webkit-filter: drop-shadow(2.5px 2.5px 3.75px rgba(0,0,0,0.4 ))!important;
+        -webkit-border-radius: 19px!important;
+        -moz-border-radius: 19px!important;
+        -ms-border-radius: 19px!important;
+        -o-border-radius: 19px!important;
+        text-transform: capitalize;
+    }
+}

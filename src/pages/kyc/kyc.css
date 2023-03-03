@@ -1,0 +1,9 @@
+.kyc{
+    background: #f7f8fb;    
+    padding-top: calc(34px + 66px);
+}
+@media only screen and (min-width: 600px) {
+    .kyc{
+        padding-top: calc(189px);
+    }
+}
