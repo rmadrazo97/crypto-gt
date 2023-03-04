@@ -1,0 +1,16 @@
+.posts{
+    padding-top: calc(30px + 66px);
+    padding-bottom: 30px;
+}
+.posts-inner{
+    width: 90%;
+    max-width: 1256px;
+    margin: auto; 
+}
+
+@media only screen and (min-width: 600px) {
+    .posts{
+        padding-top: calc(89px + 66px);
+        padding-bottom: 89px;
+    }
+}

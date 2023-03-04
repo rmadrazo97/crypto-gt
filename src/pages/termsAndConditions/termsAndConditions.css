@@ -1,0 +1,88 @@
+.termsAndConditions{
+    width: 100%;    
+    background: #f7f8fb;
+    padding-top: calc(37px + 66px);
+    margin-bottom: 50px;
+}
+.termsAndConditions .termsAndConditions-inner{
+    width: 352px;    
+    margin: auto;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    border-radius: 5px;
+    filter: drop-shadow(30px 30px 30px rgba(0,0,0,0.3 ));
+    background: #ffffff
+}
+.termsAndConditions .termsAndConditions-inner p{
+    width: 80%;
+    margin: auto;
+    font-family: "helvetica";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    font-style: normal;
+    text-align: left;
+    color: #707070;
+}
+.termsAndConditions-heading{
+    display: none;
+}
+.termsAndConditions-brief-txt{
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .termsAndConditions{
+        width: 100%;    
+        background: #f7f8fb;
+        padding-top: calc(37px + 66px);
+        margin-bottom: 182px;
+    }
+    .termsAndConditions-heading{
+        display: block;
+        width: 522px;
+        height: 54px;
+        margin: auto;
+        margin-top: 34px;
+        font-family: "helvetica";
+        font-size: 55px;
+        font-weight: bold;
+        line-height: 62px;
+        font-style: normal;
+        text-align: left;
+        color: #0f358e;
+    }
+    .termsAndConditions-brief-txt{
+        display: block;
+        width: 876px;
+        height: 68px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 112px;
+        font-family: "helvetica";
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 30px;
+        font-style: normal;
+        text-align: center;
+        color: #595f6f;
+    }
+    .termsAndConditions .termsAndConditions-inner{
+        padding-top: 43px;
+        padding-bottom: 43px;
+        border-radius: 5px;
+        filter: drop-shadow(30px 30px 30px rgba(0,0,0,0.3 ));
+        background: #ffffff;
+        width: 80%;    
+        max-width: 1256px;
+        margin: auto; 
+    }
+    .termsAndConditions .termsAndConditions-inner p{
+        font-family: "helvetica";
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 25px;
+        font-style: normal;
+        text-align: left;
+        color: #707070;
+    }
+}

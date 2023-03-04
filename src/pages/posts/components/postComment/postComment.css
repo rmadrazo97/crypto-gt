@@ -1,0 +1,172 @@
+.postComment{
+    width: 367px;    
+    margin: auto;
+    border-color: #e2e2ea;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 21px;
+}
+.postComment-inner{
+    margin: 13px;
+}
+.postComment-top-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.postComment-user-name{
+    display: flex;
+    align-items: center;    
+}
+.postComment-user-name h1{
+    margin-left: 10px;   
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    font-style: normal;
+    text-align: left;
+    color: #595f6f;
+}
+.postComment-user-blue-dot{
+    width: 17.5px;
+    height: 17.5px;
+    background: #1a47b0;
+    border-radius: 100%;
+    position: relative;
+    margin-top: -5px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.postCommert-comment p{    
+    font-family: "helvetica";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    font-style: normal;
+    text-align: left;
+    color: #b5b5be;
+}
+.postComment-rightComment{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.postComment-rightComment input{
+    margin-left: 10px;
+    width: 100%;
+    height: 19.3px;
+    background: #bfc4ce;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 7px;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.postComment-rightComment input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  .postComment-rightComment input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+  }
+  
+  .postComment-rightComment input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+  }
+.rightComment-dot{
+    width: 15.1px;
+    height: 15.1px;
+    background: #1a47b0;
+    border-radius: 100%;
+}
+.postComment-user-name h1 span{
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .postComment{
+        width: 100%;    
+        margin: auto;
+        border-color: #e2e2ea;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: 50px;        
+    }  
+    .postComment-inner{
+        margin: 20px;
+    } 
+    .postComment-user-blue-dot{
+        width: 81px;
+        height: 81px;
+        background: #1a47b0;
+        border-radius: 100%;
+        position: relative;
+        margin-top: -5px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+    .postComment-user-name h1{
+        margin-left: 10px;   
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 26px;
+        font-style: normal;
+        text-align: left;
+        color: #595f6f;
+    }
+    .postComment-user-name h1 span{
+        display: inline-block;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 21px;
+        font-style: normal;
+        text-align: left;
+        color: #92929d;
+    }
+    .postCommert-comment p{    
+        font-family: "helvetica";
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: normal;
+        text-align: left;
+        color: #b5b5be;
+        margin-top: 20px;
+    }
+    .postComment-rightComment{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .rightComment-dot{
+        width: 70px;
+        height: 70px;
+        background: #1a47b0;
+        border-radius: 100%;
+    }
+    .postComment-rightComment input{
+        width: calc(100% - 70px);
+        height: 89.2px;
+        background: #bfc4ce;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 44px;
+        font-style: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 29px;
+    }
+}

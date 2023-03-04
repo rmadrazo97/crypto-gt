@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../../components/footer';
-import Header from '../../components/header';
 import AboutUs from './components/aboutUs';
 import Cards from './components/cards';
 import CriptoTable from './components/criptoTable';
@@ -13,7 +11,6 @@ import './home.css';
 const Home = () => {
   return (
     <div>
-      <Header />
       <HomeBanner />
       <CriptoTable />
       <EmpizaComprar />
@@ -21,7 +18,6 @@ const Home = () => {
       <Cards />
       <HaveQuestionForm />
       <AboutUs />
-      <Footer />
     </div>
   );
 };
