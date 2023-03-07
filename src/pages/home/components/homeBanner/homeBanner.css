@@ -34,6 +34,7 @@
     font-style: normal;
     text-align: left;
     color: #ffffff;
+    z-index: 10;
 }
 .homeBanner .comprar-btn{
     position: absolute;

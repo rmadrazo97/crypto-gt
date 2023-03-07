@@ -4,6 +4,9 @@
     height: 573px;
     background: #f7f8fb
 }
+.aboutUs .aboutUs-mobile{
+    display: block;
+}
 .aboutUs .aboutUs-mobile .aboutUs-text1{
     position: absolute;
     top: 61px;
@@ -84,7 +87,7 @@
         color: #595f6f;
         margin-top: 22px;
     }
-    .aboutUs .aboutUs-pc .aboutusImgMobile{
+    .aboutUs .aboutUs-pc .aboutusImgPc{
         width: 611px;
         height: 611px;
         border-radius: 5px;

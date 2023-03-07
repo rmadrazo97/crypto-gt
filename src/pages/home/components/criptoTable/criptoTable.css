@@ -8,7 +8,6 @@
     margin: auto;
 }
 .criptoTable-wrapper .criptoTable-text1{    
-    width: 367px;
     height: 13px;
     font-family: "helvetica";
     font-size: 13px;
@@ -17,11 +16,11 @@
     font-style: normal;
     text-align: left;
     color: #3e3e3e;
-    margin-top: 34px;
+    margin-top: 20px;
     margin-left: 31px;    
 }
 .criptoTable-wrapper .criptoTable-text2{    
-    width: 333px;
+    /* width: 333px; */
     height: 25px;
     font-family: "helvetica";
     font-size: 11px;
@@ -92,7 +91,7 @@
         font-style: normal;
         text-align: left;
         color: #3e3e3e;
-        margin-top: 81px;
+        margin-top: 20px;
         margin-left: 0;          
     }
     .criptoTable-wrapper .criptoTable-text2{    

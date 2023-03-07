@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import socialIcon1 from '../../assets/images/socialIcon1.svg';
 import socialIcon2 from '../../assets/images/socialIcon2.svg';
 import socialIcon3 from '../../assets/images/socialIcon3.svg';
@@ -41,10 +42,18 @@ const Footer = () => {
         <div>
           <h2 className="footer-nav-h">Navegación</h2>
           <ul className="footer-links">
-            <li>Home</li>
-            <li>Formulario</li>
-            <li>Comprar y Vender</li>
-            <li>Términos y Políticas</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/formulario">Formulario</Link>
+            </li>
+            <li>
+              <Link to="/comunidad">Comprar y Vender</Link>
+            </li>
+            <li>
+              <Link to="/términos-y-políticas">Términos y Políticas</Link>
+            </li>
           </ul>
         </div>
         <div className="spacer113" />
