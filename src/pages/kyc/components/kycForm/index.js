@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react';
+// import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import { v4 as uuidv4 } from 'uuid';
 import { getDatabase, ref, set } from 'firebase/database';
 import { ref as sRef } from 'firebase/storage';
@@ -59,8 +61,34 @@ const KycForm = () => {
     });
   };
 
-  const handleSubmit = () => {
-    console.log('kycData', kycData);
+  const sendEmail = () => {
+    const emailContent = {
+      user_name: kycData.name + kycData.surName,
+      user_email: kycData.email,
+      // user_name: 'Khurram',
+      // user_email: 'khurramkiiman@gmail.com',
+      subject: 'Thank you for your response',
+      message: `Thank you ${kycData.name}. submission received succesfully`,
+      // message: `Thank you Khurram. submission received succesfully`,
+    };
+    emailjs
+      .send(
+        'service_mhpk5ih',
+        'template_p2n8nxn',
+        emailContent,
+        'vhtfp9nwvBze2w8iL'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleSubmit = async () => {
     if (
       kycData.name !== '' &&
       kycData.surName !== '' &&
@@ -79,6 +107,7 @@ const KycForm = () => {
       kycData.holdingDPI !== ''
     ) {
       set(ref(db, 'kycs/' + uuidv4()), kycData);
+      sendEmail();
       resetFields();
       alert('Kyc form submit successfully...!!!');
     } else {
@@ -113,8 +142,6 @@ const KycForm = () => {
       (error) => console.log(error),
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-          // downloadURL
-          console.log('downloadURL', downloadURL);
           setKycData({ ...kycData, [name]: downloadURL });
         });
       }
@@ -224,10 +251,10 @@ const KycForm = () => {
         />
         &nbsp; &nbsp; &nbsp;
         {progressFrontDPI > 0 ? (
-          <>
+          <span>
             Uploaded &nbsp;
             <span style={{ color: 'green' }}>{progressFrontDPI} %</span>
-          </>
+          </span>
         ) : null}
         &nbsp; &nbsp; &nbsp;
         {kycData.frontDPI && (
@@ -245,10 +272,10 @@ const KycForm = () => {
         />
         &nbsp; &nbsp; &nbsp;
         {progressBackDPI > 0 ? (
-          <>
+          <span>
             Uploaded &nbsp;
             <span style={{ color: 'green' }}>{progressBackDPI} %</span>
-          </>
+          </span>
         ) : null}
         &nbsp; &nbsp; &nbsp;
         {kycData.backDPI && (
@@ -264,10 +291,10 @@ const KycForm = () => {
         />
         &nbsp; &nbsp; &nbsp;
         {progressHoldingDPI > 0 ? (
-          <>
+          <span>
             Uploaded &nbsp;
             <span style={{ color: 'green' }}>{progressHoldingDPI} %</span>
-          </>
+          </span>
         ) : null}
         &nbsp; &nbsp; &nbsp;
         {kycData.holdingDPI && (
@@ -275,8 +302,9 @@ const KycForm = () => {
             Preview
           </a>
         )}
-        <div className="kycForm-enter-btn" onClick={() => handleSubmit()}>
-          <button>Enviar</button>
+        <div className="kycForm-enter-btn">
+          <button onClick={() => handleSubmit()}>Enviar</button>
+          {/* <button onClick={() => sendEmail()}>Send</button> */}
         </div>
       </div>
     </div>
