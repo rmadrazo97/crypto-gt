@@ -68,3 +68,59 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Components Documentation
+### AboutUs Component
+This component displays information about the website or organization. It shows different content depending on whether it is viewed on a desktop or mobile device.
+
+#### Props
+This component does not receive any props.
+
+#### Usage
+Import the AboutUs component and include it in your JSX code:
+`
+import AboutUs from './path/to/AboutUs';
+`
+`
+function App() {
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
+}
+`
+#### Structure
+The AboutUs component is structured as follows:
+
+`
+<div className="aboutUs">
+  <div className="aboutUs-pc">
+    <img className="aboutusImgPc" src={aboutUsImgpc} alt="aboutusImg" />
+    <div>
+      <p className="aboutUs-text1">Sobre nosotros</p>
+      <p className="aboutUs-text2">
+        Lorem ipsum dolor sit amet, est vero delicatissimi id, usu aliquid
+        debitis id. Ea error audiam alienum eos, an vel quas docendi
+        disputando.
+      </p>
+    </div>
+  </div>
+  <div className="aboutUs-mobile">
+    <p className="aboutUs-text1">Sobre nosotros</p>
+    <p className="aboutUs-text2">
+      Lorem ipsum dolor sit amet, est vero delicatissimi id, usu aliquid
+      debitis id. Ea error audiam alienum eos, an vel quas docendi
+      disputando.
+    </p>
+    <img className="aboutusImgMobile" src={aboutusImg} alt="aboutusImg" />
+  </div>
+</div>
+`
+On desktop, the aboutUsImgpc image is displayed to the left of the text. On mobile, the aboutusImg image is displayed below the text.
+
+#### Styling
+The AboutUs component has its own styles in a separate CSS file, which is imported at the top of the component file:
+
+`import './aboutUs.css';`
+You can customize the appearance of the component by modifying the styles in this file.
