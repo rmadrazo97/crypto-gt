@@ -52,7 +52,7 @@ const Footer = () => {
               <Link to="/comunidad">Comprar y Vender</Link>
             </li>
             <li>
-              <Link to="/términos-y-políticas">Términos y Políticas</Link>
+              <Link to="/términos-y-políticas">Acerca De</Link>
             </li>
           </ul>
         </div>

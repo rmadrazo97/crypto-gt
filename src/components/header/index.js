@@ -43,7 +43,7 @@ const Header = () => {
                   : ''
               }
             >
-              Términos y Políticas
+              Acerca De
             </li>
           </Link>
         </ul>

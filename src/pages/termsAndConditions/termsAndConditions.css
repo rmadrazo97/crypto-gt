@@ -4,6 +4,16 @@
     padding-top: calc(37px + 66px);
     margin-bottom: 50px;
 }
+.termsAndConditionsList{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.termsAndConditionsList li{
+    margin-bottom: 8px;
+}
+.termsAndConditions strong{
+    font-weight: bold;
+}
 .termsAndConditions .termsAndConditions-inner{
     width: 352px;    
     margin: auto;
@@ -39,16 +49,16 @@
     }
     .termsAndConditions-heading{
         display: block;
-        width: 522px;
+        width: 630px;
         height: 54px;
         margin: auto;
         margin-top: 34px;
         font-family: "helvetica";
-        font-size: 55px;
+        font-size: 53px;
         font-weight: bold;
         line-height: 62px;
         font-style: normal;
-        text-align: left;
+        text-align: center;
         color: #0f358e;
     }
     .termsAndConditions-brief-txt{
@@ -57,11 +67,11 @@
         height: 68px;
         margin: auto;
         margin-top: 25px;
-        margin-bottom: 112px;
+        margin-bottom: 20px;
         font-family: "helvetica";
         font-size: 25px;
         font-weight: 300;
-        line-height: 30px;
+        line-height: 20px;
         font-style: normal;
         text-align: center;
         color: #595f6f;
@@ -78,11 +88,12 @@
     }
     .termsAndConditions .termsAndConditions-inner p{
         font-family: "helvetica";
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 25px;
         font-style: normal;
-        text-align: left;
+        text-align: justify;
         color: #707070;
+        text-justify: auto;
     }
 }
