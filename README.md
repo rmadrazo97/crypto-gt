@@ -78,10 +78,9 @@ This component does not receive any props.
 
 #### Usage
 Import the AboutUs component and include it in your JSX code:
-`
-import AboutUs from './path/to/AboutUs';
-`
-`
+`import AboutUs from './path/to/AboutUs';`
+
+```
 function App() {
   return (
     <div>
@@ -89,11 +88,12 @@ function App() {
     </div>
   );
 }
-`
+```
+
 #### Structure
 The AboutUs component is structured as follows:
 
-`
+```
 <div className="aboutUs">
   <div className="aboutUs-pc">
     <img className="aboutusImgPc" src={aboutUsImgpc} alt="aboutusImg" />
@@ -116,7 +116,7 @@ The AboutUs component is structured as follows:
     <img className="aboutusImgMobile" src={aboutusImg} alt="aboutusImg" />
   </div>
 </div>
-`
+```
 On desktop, the aboutUsImgpc image is displayed to the left of the text. On mobile, the aboutusImg image is displayed below the text.
 
 #### Styling
