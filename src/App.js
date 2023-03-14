@@ -6,6 +6,7 @@ import TermsAndConditions from './pages/termsAndConditions';
 import Header from './components/header';
 import Footer from './components/footer';
 import Posts from './pages/posts';
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         <Route path="/comunidad" element={<Posts />} />
       </Routes>
       <Footer />
+      <TawkMessengerReact
+                propertyId="640c665231ebfa0fe7f1f42d"
+                widgetId="1gr86vd1v"/>
     </div>
   );
 }
